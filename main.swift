@@ -4,37 +4,56 @@
 print(false)
 print(43 == 53)
 */
-
+print(false)
 // 9 == 9
-
+print(true)
 // 9 != 9
-
+print(false)
 // 47 > 90
-
+print(false)
 // 47 < 90
-
+print(true)
 // 4 <= 5
-
+print(true)
 // 4 >= 5
-
+print(false)
 // (47 > 90) && (47 < 90)
-
+print(false)
 // (47 > 90) || (47 < 90)
-
+print(true)
 // !true
-
+print(false)
 // Imagine you're creating a machine that will count your money for you and tell you how wealthy you are based on how much money you have. A variable dollars has been given to you with a value of 0. Write an if statement that prints "Sorry, kid. You're broke!" if dollars has a value of 0. Observe what is printed to the console.
 var dollars = 0
-
+if dollars == 0 {
+  print("Sorry, kid. You're Broke!")
+}
 // dollars has been updated below to have a value of 10. Write an an if-else statement that prints "Sorry, kid. You're broke!" if dollars has a value of 0, but prints "You've got some spending money!" otherwise. Observe what is printed to the console.
 dollars = 10
-
+if dollars == 0 {
+  print("Sorry, kid. You're Broke!")
+} else {
+  print("You've got some spending money!")
+}
 // dollars has been updated below to have a value of 105. Write an an if-else-if statement that prints "Sorry, kid. You're broke!" if dollars has a value of 0, prints "You've got some spending money!" if dollars is less than 100, and prints "Looks to me like you're rich!" otherwise. Observe what is printed to the console.
 dollars = 105
-
+if dollars == 0 {
+  print("Sorry, kid. You're Broke!")
+} else if dollars < 100 {
+  print("You've got some spending money!")
+} else if dollars > 100 {
+  print("Looks to me like you're rich!")
+}
 // You want your fitness tracking app to give as much encouragement as possible to your users. Create a variable steps equal to the number of steps you guess you've taken today. Create a constant stepGoal equal to 10,000. Write an if-else statement that will print "You're almost halfway there!" if steps is less than half of stepGoal, and will print "You're over halfway there!" if steps is greater than half of stepGoal.
 let stepGoal = 10000
 var steps = 3500
+var steps1 = steps
+let stepGoal1 = 10000
+if steps1 < 5000 {
+  print("You're almost halfway there!")
+} else if steps1 > 5000 {
+  print("You're over halfway there!")
+}
 // Now create a new, but similar, if-else-if statement that prints "Way to get a good start today!" if steps is less than a tenth of stepGoal, prints "You're almost halfway there!" if steps is less than half of stepGoal, and prints "You're over halfway there!" if steps is greater than half of stepGoal.
 
 /* Imagine you're going to dinner with friends and are struggling to decide where to go. Two of you have very strong opinions and have clearly laid out your requirements for dinner as follows:
